@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../stylesheets/Headquarters.css';
 import { Grid } from 'semantic-ui-react';
 import Details from './Details'
 
 
-class Headquarters extends Component {
+const Headquarters = () => {
   // Remember, there's many ways to do this. This doesn't have to be a class component. It's up to you.
 
-  render(){
-    return(
+    return (
       <Grid celled='internally'>
         <Grid.Column width={8}>
 
@@ -25,7 +24,6 @@ class Headquarters extends Component {
         </Grid.Column>
       </Grid>
     )
-  }
 }
 
 export default Headquarters;
